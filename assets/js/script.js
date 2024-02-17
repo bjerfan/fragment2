@@ -344,7 +344,7 @@ function generateJson() {
         let serviceName = $('#serviceName').val();
         let cleanIp = $('#cleanIp').val();
         if ( cleanIp === '' ) {
-            cleanIp = 'zula.ir';
+            cleanIp = 'www.speedtest.net';
         }
         let direct = $('#direct').is(':checked');
         let appName = $('input[name="app"]:checked').attr('id');
