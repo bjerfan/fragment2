@@ -112,8 +112,8 @@ function resetForm() {
     $('#path').val("");
     $('#concurrency').val("");
     $('#packets').val('tlshello');
-    $('#length').val('10-20');
-    $('#interval').val('10-20');
+    $('#length').val('5-10');
+    $('#interval').val('2');
 }
 
 $(document).on('keyup', '#defConfig', function(e) {
@@ -157,8 +157,8 @@ $(document).on('keyup', '#defConfig', function(e) {
     if ( (protocol === 'vmess' && defConfig.tls === "tls") || (protocol === 'vless' && defConfig.security === "tls") || (protocol === 'trojan' && defConfig.security === "tls") ) {
         $('#tls').prop('checked', true);
         $('#packets').val('tlshello');
-        $('#length').val('10-20');
-        $('#interval').val('10-20');
+        $('#length').val('5-10');
+        $('#interval').val('2');
         if ( typeof defConfig.host === "undefined" || typeof defConfig.host !== "undefined" && defConfig.host === "") {
             $('#sni').val(defConfig.sni);
         }
@@ -283,8 +283,8 @@ $(document).on('click', '#tls', function(e) {
     let tls = $('#tls').is(':checked');
     if ( tls ) {
         $('#packets').val('tlshello');
-        $('#length').val('10-20');
-        $('#interval').val('10-20');
+        $('#length').val('5-10');
+        $('#interval').val('2');
         $('#sni').attr('placeholder', 'SNI');
     }
     else {
