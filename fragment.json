@@ -108,8 +108,8 @@
         }
       },
       "mux": {
-        "enabled": false,
-        "concurrency": -1,
+        "enabled": true,
+        "concurrency": 8,
         "xudpConcurrency": -1,
         "xudpProxyUDP443": "reject"
       }
@@ -121,8 +121,8 @@
         "domainStrategy": "AsIs",
         "fragment": {
           "packets": "tlshello",
-          "length": "10-20",
-          "interval": "10-20"
+          "length": "5-10",
+          "interval": "2"
         }
       },
       "streamSettings": {
