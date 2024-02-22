@@ -113,7 +113,7 @@ function resetForm() {
     $('#concurrency').val("");
     $('#packets').val('tlshello');
     $('#length').val('5-10');
-    $('#interval').val('2');
+    $('#interval').val('13');
 }
 
 $(document).on('keyup', '#defConfig', function(e) {
@@ -158,7 +158,7 @@ $(document).on('keyup', '#defConfig', function(e) {
         $('#tls').prop('checked', true);
         $('#packets').val('tlshello');
         $('#length').val('5-10');
-        $('#interval').val('2');
+        $('#interval').val('13');
         if ( typeof defConfig.host === "undefined" || typeof defConfig.host !== "undefined" && defConfig.host === "") {
             $('#sni').val(defConfig.sni);
         }
@@ -284,7 +284,7 @@ $(document).on('click', '#tls', function(e) {
     if ( tls ) {
         $('#packets').val('tlshello');
         $('#length').val('5-10');
-        $('#interval').val('2');
+        $('#interval').val('13');
         $('#sni').attr('placeholder', 'SNI');
     }
     else {
